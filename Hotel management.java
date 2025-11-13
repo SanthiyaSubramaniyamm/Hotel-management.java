@@ -6,13 +6,11 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 class Food implements Serializable
 {
     int itemno;
     int quantity;   
     float price;
-    
     Food(int itemno,int quantity)
     {
         this.itemno=itemno;
@@ -54,7 +52,6 @@ class Doubleroom extends Singleroom implements Serializable
     String name2;
     String contact2;
     String gender2;  
-    
     Doubleroom()
     {
         this.name="";
@@ -86,7 +83,6 @@ class holder implements Serializable
     Singleroom luxury_singleerrom[]=new Singleroom[10]; //Luxury
     Singleroom deluxe_singleerrom[]=new Singleroom[20]; //Deluxe
 }
-
 class Hotel
 {
     static holder hotel_ob=new holder();
@@ -570,4 +566,5 @@ public class Main {
             wish=sc.next().charAt(0); 
             if(!(wish=='y'||wish=='Y'||wish=='n'||wish=='N'))
             {
-                System.out.println("Invalid Option");
+
+                System.out.println("Invalid Option");}}}}}}}
